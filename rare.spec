@@ -51,4 +51,4 @@ Display rating from ProtonDB for each game
 %{python_sitelib}/%{oname}-%{version}-py*.*.egg-info
 %{python_sitelib}/%{oname}-%{version}-py*.*.egg-info/PKG-INFO
 %{python_sitelib}/%{name}
-%{python_sitelib}/custom_legendary
+#{python_sitelib}/custom_legendary
