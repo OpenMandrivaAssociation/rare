@@ -48,7 +48,7 @@ Display rating from ProtonDB for each game
 
 %files
 %{_bindir}/rare
-#{python_sitelib}/%{oname}-%{version}-py*.*.egg-info
-#{python_sitelib}/%{oname}-%{version}-py*.*.egg-info/PKG-INFO
+%{python_sitelib}/%{oname}-*-py*.*.egg-info
+%{python_sitelib}/%{oname}-*-py*.*.egg-info/PKG-INFO
 %{python_sitelib}/%{name}
 #{python_sitelib}/custom_legendary
