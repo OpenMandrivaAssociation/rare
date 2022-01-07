@@ -4,7 +4,7 @@
 %define oname    Rare
 
 Name:           rare
-Version:        1.8.4
+Version:        1.8.5
 Release:        1
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
