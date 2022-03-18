@@ -4,7 +4,7 @@
 %define oname    Rare
 
 Name:           rare
-Version:        1.8.7
+Version:        1.8.8
 Release:        1
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
@@ -49,6 +49,5 @@ Display rating from ProtonDB for each game
 %files
 %{_bindir}/rare
 %{python_sitelib}/%{oname}-*-py*.*.egg-info
-%{python_sitelib}/%{oname}-*-py*.*.egg-info/PKG-INFO
 %{python_sitelib}/%{name}
 #{python_sitelib}/custom_legendary
