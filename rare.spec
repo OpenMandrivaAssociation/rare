@@ -4,7 +4,7 @@
 %define oname    Rare
 
 Name:           rare
-Version:        1.8.9
+Version:        1.9.0
 Release:        1
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
@@ -21,7 +21,9 @@ Requires:       python3dist(requests)
 Requires:       python3dist(pillow)
 Requires:       python3dist(qtawesome)
 Requires:       python3dist(psutil)
+Requires:       python3dist(typing-extensions)
 Requires:       PyQt5
+Requires:       legendary
 
 %description
 Rare is a GUI for Legendary, a command line alternative to Epic Games launcher.
