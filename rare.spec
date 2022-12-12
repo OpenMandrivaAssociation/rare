@@ -50,7 +50,7 @@ Display rating from ProtonDB for each game
 %install
 %py_install
 
-install -d misc/rare.desktop %{buildroot}%{_datadir}/applications/rare.desktop
+#install -d misc/rare.desktop %{buildroot}%{_datadir}/applications/rare.desktop
 
 %files
 %{_bindir}/rare
