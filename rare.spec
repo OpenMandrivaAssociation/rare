@@ -14,6 +14,8 @@ Source0:        https://github.com/Dummerle/Rare/archive/refs/tags/%{version}/%{
 
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
+BuildRequires:  python3dist(pip)
+BuildRequires:  python3dist(wheel)
 
 # Keep in sync with requires dependencies from here https://github.com/Dummerle/Rare/blob/main/requirements.txt
 Requires:       python3dist(pypresence)
