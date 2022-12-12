@@ -50,7 +50,7 @@ Display rating from ProtonDB for each game
 %install
 %py_install
 
-#install -d Rare/misc/rare.desktop %{buildroot}%{_datadir}/applications/rare.desktop
+install -Dm644 "rare/resources/images/Rare.png" "%{buildroot}/usr/share/pixmaps/rare.png"
 install -Dm644 "misc/rare.desktop" "%{buildroot}/usr/share/applications/rare.desktop"
 
 %files
