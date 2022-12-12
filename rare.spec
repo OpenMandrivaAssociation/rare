@@ -4,7 +4,7 @@
 %define oname    Rare
 
 Name:           rare
-Version:        1.9.0
+Version:        1.9.4
 Release:        1
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
@@ -14,6 +14,8 @@ Source0:        https://github.com/Dummerle/Rare/archive/refs/tags/%{version}/%{
 
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
+BuildRequires:  python3dist(pip)
+BuildRequires:  python3dist(wheel)
 
 # Keep in sync with requires dependencies from here https://github.com/Dummerle/Rare/blob/main/requirements.txt
 Requires:       python3dist(pypresence)
@@ -48,8 +50,12 @@ Display rating from ProtonDB for each game
 %install
 %py_install
 
+install -Dm644 "rare/resources/images/Rare.png" "%{buildroot}/usr/share/pixmaps/rare.png"
+install -Dm644 "misc/rare.desktop" "%{buildroot}/usr/share/applications/rare.desktop"
+
 %files
 %{_bindir}/rare
-%{python_sitelib}/%{oname}-*-py*.*.egg-info
+%{python_sitelib}/Rare-%{version}.dist-info/
 %{python_sitelib}/%{name}
-#{python_sitelib}/custom_legendary
+%{_datadir}/applications/rare.desktop
+%{_datadir}/pixmaps/rare.png
