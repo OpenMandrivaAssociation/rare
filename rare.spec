@@ -14,6 +14,7 @@ Source0:        https://github.com/Dummerle/Rare/archive/refs/tags/%{version}/%{
 
 # Support for legendary 0.20.32
 Patch0:         https://github.com/Dummerle/Rare/commit/3ef6d120e3e85d6ad12e279b1158633d7edd9205.patch
+Patch1:         setuppy-legendary-0.20.32-support.patch
 
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
