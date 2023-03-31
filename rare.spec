@@ -5,7 +5,7 @@
 
 Name:           rare
 Version:        1.9.5
-Release:        1
+Release:        2
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
 License:        GPL-3.0
