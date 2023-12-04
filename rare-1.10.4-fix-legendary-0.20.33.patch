@@ -1,0 +1,24 @@
+diff -uraN Rare-1.10.4/pyproject.toml omv-Rare-1.10.4/pyproject.toml
+--- Rare-1.10.4/pyproject.toml	2023-12-03 16:15:12.000000000 +0100
++++ omv-Rare-1.10.4/pyproject.toml	2023-12-04 14:19:53.636567502 +0100
+@@ -31,7 +31,7 @@
+     { version = "^3.6.3", extras = ["gtk"], platform = "linux", optional = true },
+     { version = "^3.6.3", extras = ["gtk"], platform = "freebsd", optional = true },
+ ]
+-legendary-gl = "^0.20.32"
++legendary-gl = "^0.20.33"
+ typing-extensions = "^4.3.0"
+ 
+ [tool.poetry.scripts]
+diff -uraN Rare-1.10.4/setup.py omv-Rare-1.10.4/setup.py
+--- Rare-1.10.4/setup.py	2023-12-03 16:15:12.000000000 +0100
++++ omv-Rare-1.10.4/setup.py	2023-12-04 14:19:33.055979447 +0100
+@@ -7,7 +7,7 @@
+ 
+ requirements = [
+     "requests<3.0",
+-    "legendary-gl==0.20.32",
++    "legendary-gl==0.20.33",
+     "setuptools",
+     "wheel",
+     "PyQt5",
