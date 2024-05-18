@@ -5,11 +5,11 @@
 
 Name:           rare
 Version:        1.10.11
-Release:        1
+Release:        2
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
 License:        GPL-3.0
-URL:            https://github.com/Dummerle/Rare
+URL:            https://github.com/RareDevs/Rare
 Source0:        https://github.com/Dummerle/Rare/archive/refs/tags/%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires:  pkgconfig(python)
