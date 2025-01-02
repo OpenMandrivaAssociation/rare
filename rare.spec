@@ -14,6 +14,7 @@ Source0:        https://github.com/RareDevs/Rare/archive/%{version}/%{oname}-%{v
 
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
+BuildRequires:  python3dist(setuptools-scm)
 BuildRequires:  python3dist(pip)
 BuildRequires:  python3dist(wheel)
 
