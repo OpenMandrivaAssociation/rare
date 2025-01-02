@@ -56,7 +56,7 @@ install -Dm644 "misc/rare.desktop" "%{buildroot}/usr/share/applications/rare.des
 
 %files
 %{_bindir}/rare
-%{python_sitelib}/Rare-%{version}.dist-info/
+#{python_sitelib}/Rare-%{version}.dist-info/
 %{python_sitelib}/%{name}
 %{_datadir}/applications/rare.desktop
 %{_datadir}/pixmaps/rare.png
