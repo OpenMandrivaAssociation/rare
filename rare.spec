@@ -4,13 +4,13 @@
 %define oname    Rare
 
 Name:           rare
-Version:        1.10.11
-Release:        2
+Version:        1.11.2
+Release:        1
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
 License:        GPL-3.0
 URL:            https://github.com/RareDevs/Rare
-Source0:        https://github.com/Dummerle/Rare/archive/refs/tags/%{version}/%{oname}-%{version}.tar.gz
+Source0:        https://github.com/RareDevs/Rare/archive/%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
@@ -24,7 +24,7 @@ Requires:       python3dist(pillow)
 Requires:       python3dist(qtawesome)
 Requires:       python3dist(psutil)
 Requires:       python3dist(typing-extensions)
-Requires:       PyQt5
+Requires:       pyside6
 Requires:       legendary
 
 %description
