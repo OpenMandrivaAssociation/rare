@@ -45,6 +45,8 @@ Display rating from ProtonDB for each game
 
 %prep
 %autosetup -n %{oname}-%{version} -p1
+# workaround
+sed -i '/PySide6-Essentials >= 6\.8\.1/d' pyproject.toml
 
 %build
 %py_build
