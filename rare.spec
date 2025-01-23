@@ -4,7 +4,7 @@
 %define oname    Rare
 
 Name:           rare
-Version:        1.11.2
+Version:        1.11.3
 Release:        1
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
@@ -25,6 +25,7 @@ Requires:       python3dist(pillow)
 Requires:       python3dist(qtawesome)
 Requires:       python3dist(psutil)
 Requires:       python3dist(typing-extensions)
+Requires:       python3dist(vdf)
 Requires:       pyside6
 Requires:       legendary
 
