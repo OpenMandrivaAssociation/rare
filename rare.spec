@@ -4,16 +4,17 @@
 %define oname    Rare
 
 Name:           rare
-Version:        1.10.11
-Release:        2
+Version:        1.11.3
+Release:        1
 Summary:        GUI for legendary. An Epic Games Launcher open source alternative
 Group:          Games
 License:        GPL-3.0
 URL:            https://github.com/RareDevs/Rare
-Source0:        https://github.com/Dummerle/Rare/archive/refs/tags/%{version}/%{oname}-%{version}.tar.gz
+Source0:        https://github.com/RareDevs/Rare/archive/%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
+BuildRequires:  python3dist(setuptools-scm)
 BuildRequires:  python3dist(pip)
 BuildRequires:  python3dist(wheel)
 
@@ -24,7 +25,8 @@ Requires:       python3dist(pillow)
 Requires:       python3dist(qtawesome)
 Requires:       python3dist(psutil)
 Requires:       python3dist(typing-extensions)
-Requires:       PyQt5
+Requires:       python3dist(vdf)
+Requires:       pyside6
 Requires:       legendary
 
 %description
@@ -43,6 +45,8 @@ Display rating from ProtonDB for each game
 
 %prep
 %autosetup -n %{oname}-%{version} -p1
+# workaround
+sed -i '/PySide6-Essentials >= 6\.8\.1/d' pyproject.toml
 
 %build
 %py_build
@@ -55,7 +59,7 @@ install -Dm644 "misc/rare.desktop" "%{buildroot}/usr/share/applications/rare.des
 
 %files
 %{_bindir}/rare
-%{python_sitelib}/Rare-%{version}.dist-info/
+%{python_sitelib}/Rare-%{version}.0.dist-info/
 %{python_sitelib}/%{name}
 %{_datadir}/applications/rare.desktop
 %{_datadir}/pixmaps/rare.png
